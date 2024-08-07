@@ -13,9 +13,8 @@ jobs:
       - uses: actions/checkout@v4
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_path: docs
+          input_path: README.md
           output_dir: pdfs
-          images_dir: docs/images
           build_html: false
       - uses: actions/upload-artifact@v4
         with:
